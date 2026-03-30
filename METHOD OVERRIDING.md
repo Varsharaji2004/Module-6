@@ -33,11 +33,40 @@ To write a Python program to create a Parent class `Bird` and inherit two child 
 
 ### PROGRAM
 
+```python
+from abc import ABC, abstractmethod   
+class Car(ABC):   
+    def mileage(self):
+        pass
+class Tesla(Car):   
+    def mileage(self):   
+        print("The mileage is 30kmph")   
+class Suzuki(Car):   
+    def mileage(self):   
+        print("The mileage is 25kmph ")   
+class Duster(Car):   
+    def mileage(self):
+        print("The mileage is 24kmph ")   
+class Renault(Car):
+    def mileage(self):
+        print("The mileage is 27kmph ")   
+t = Tesla()
+t.mileage()
+r = Renault()
+r.mileage()
+s = Suzuki()   
+s.mileage()   
+d = Duster()   
+d.mileage()
 ```
 
-```
 
 ### OUTPUT
 
+<img width="1181" height="257" alt="image" src="https://github.com/user-attachments/assets/a5b09e0a-f954-408b-ad33-48ac84e847d8" />
+
+
 
 ### RESULT
+
+Therefore, the output is the example to write a Python program to create a Parent class Bird and inherit two child classes Sparrow and Ostrich from the Bird class with the same method flight(). Create an object for each class and call the methods of the class which will print the name of the bird that is flying.
